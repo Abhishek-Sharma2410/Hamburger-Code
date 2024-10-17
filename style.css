@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo h1 i{
+    color: green;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+.hamburger{
+    display: none;
+}
+.hamburger i{
+    font-size: 1rem;
+}
+.cross{
+    display: none;
+}
+@media screen and (max-width:716px) {
+    .hamburger{
+        display: block;
+        font-size: 1.25rem;
+    }
+    .links{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 50%;
+        height: 100vh;
+        left: -120%;
+        background-color: #fff;
+        box-shadow: 10px 10px 10px 10px rgb(198, 198, 198);
+        transition: 0.4s ease-in-out;
+    }
+    .links.active{
+        left: 0px;
+    }
+    .nav-links{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+        padding: 0px;
+    }
+    .cross{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .cross i{
+        font-size: 1.5rem;
+        color: green;
+    }
+    li{
+        margin: 30px;
+        padding-right: 0px;
+    }
+    li a{
+        color: green;
+    }
+}
