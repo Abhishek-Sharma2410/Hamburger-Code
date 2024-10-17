@@ -44,17 +44,17 @@ li a{
     }
     .links{
         position: absolute;
-        left: 0px;
+        /* left: 0px; */
         top: 0px;
-        width: 50%;
-        height: 100vh;
-        left: -120%;
+        width: 100%;
+        height: 50vh;
+        top: -120%;
         background-color: #fff;
         box-shadow: 10px 10px 10px 10px rgb(198, 198, 198);
         transition: 0.4s ease-in-out;
     }
     .links.active{
-        left: 0px;
+        top: 0px;
     }
     .nav-links{
         flex-direction: column;
